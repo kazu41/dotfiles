@@ -1,0 +1,4 @@
+#bundle以下のプラグインを無視
+!bundle/vim-latex/
+!bundle/vundle/
+bundle/

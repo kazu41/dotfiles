@@ -1,0 +1,48 @@
+"全般
+set t_Co=256
+set background=dark
+
+"colorscheme rdark
+"colorscheme desert
+"colorscheme edark
+colorscheme solarized
+let g:solarized_termcolors=16
+let g:solarized_contrast="high"
+
+set showtabline=2	" タブを常に表示
+if has('gui_macvim')
+	set transparency=5	" 透過率15
+	set background=dark
+endif
+
+"edark
+"http://eureka.pasela.org/
+
+"rdark
+"http://www.vim.org/scripts/script.php?script_id=1732
+
+"81桁目以降を強調表示
+"hi over80column guibg=dimgray
+"match over80column /.\%>81v/
+
+"フォント
+if has('mac')
+    set guifont=Ricty:h18
+elseif has('xfontset')
+	" UNIX用 (xfontsetを使用)
+	set guifontset=a18,r18,k18
+endif
+
+"ウィンドウ関係
+set guioptions-=T
+if has('gui_macvim') 
+  set columns=160
+  set lines=65
+  winpos 70 70
+else
+  set columns=140
+  set lines=55
+  winpos 70 70
+endif
+set cmdheight=2  "コマンドラインの高さ(GUI使用時)
+

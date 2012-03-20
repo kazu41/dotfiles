@@ -1,0 +1,48 @@
+"vunlde.vimで管理してるpluginを読み込む
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" ファイラー,ランチャー
+Bundle "unite.vim"
+
+" テンプレート
+Bundle "SonicTemplate.vim"
+
+" Programing
+""""""""""""""""""""""
+" 実行環境
+Bundle "quickrun.vim"
+" 変数宣言一覧 
+Bundle "taglist.vim"
+nnoremap <C-B> :TlistToggle<Return>
+" ツリー型エクスプローラ
+Bundle "The-NERD-tree"
+nnoremap <C-N> :NERDTreeToggle<Return>
+
+" tagsの生成
+"Bundle "Source-Explorer-srcexpl.vim"
+" taglist,nerdtree,srcexplの統合
+"Bundle 'trinity.vim'
+" References
+Bundle "thinca/vim-ref"
+" Python 入力補間
+Bundle "Pydiction"
+" Python
+Bundle "yuroyoro/vim-python"
+
+" Syntax Checking Plugin
+Bundle "scrooloose/syntastic"
+""""""""""""""""""""""
+
+" 自動補間
+Bundle "neocomplcache"
+Bundle "Shougo/neocomplcache-snippets-complete"
+
+" ステータスラインカスタマイズ
+Bundle "Lokaltog/vim-powerline"
+
+" カラースキーム
+Bundle "Solarized"
+filetype plugin indent on

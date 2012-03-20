@@ -1,0 +1,21 @@
+Bundle "vim-latex"
+"filetype plugin on
+set shellslash
+set grepprg="grep\ -nH\ $*"
+let g:tex_flavor='latex'
+let g:Tex_CompileRule_pdf = "pdflatex $*.tex"
+
+let g:Tex_ViewRule_pdf = 'open -a /Applications/Preview.app'
+let g:Tex_FormatDependency_pdf = 'dvi,pdf'
+let g:Tex_CompileRule_pdf = 'dvipdfmx $*.dvi'
+let g:Tex_CompileRule_dvi = 'platex --interaction-nonstopmode $*'
+let g:Tex_IgnoredWarnings =
+      \"Underfull\n".
+      \"Overfull\n".
+      \"specifier changed to\n".
+      \"You have requested\n".
+      \"Missing number, treated as zero.\n".
+      \"There were undefined references\n".
+      \"Citation %.%# undefined\n".
+      \'LaTeX Font Warning:'"
+let g:Tex_IgnoreLevel = 8

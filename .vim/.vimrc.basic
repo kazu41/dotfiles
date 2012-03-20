@@ -1,0 +1,46 @@
+"General
+set number       "行番号表示
+set ruler        "ルーラー表示
+
+"Tab関係
+"tabstop(ts) Tab文字を画面上で何文字に展開するか
+set tabstop=4
+"shiftwidth(sw) インデントの幅
+set shiftwidth=4
+"softtabstop(sts) Tabキーを押したときに挿入される空白の量
+set softtabstop=0
+"
+
+"入力関係
+set backspace=indent,eol,start  "BSでなんでも消せるようにする
+set autoindent
+set smartindent
+
+"コマンド補完
+set wildmenu
+set wildmode=list:longest
+set completeopt=menu,preview,menuone
+
+"検索関係
+set incsearch    "インクリメンタルサーチ
+set nowrapscan   "ラップしない
+set ignorecase   "大文字小文字無視
+set smartcase    "大文字で始めたら大文字小文字を区別する
+set hlsearch     "検索文字をハイライト表示
+
+"選択した文字列を検索
+vnoremap <silent> // y/<C-R>=escape(@", '\\/.*$^~[]')<CR><CR>
+"選択した文字列を置換
+vnoremap /r "xy:%s/<C-R>=escape(@x, '\\/.*$^~[]')<CR>//gc<Left><Left><Left>
+"
+
+"ファイルタイプ関係
+source ~/.vim/ftdetect/*.vim
+syntax on           "シンタックスハイライト
+filetype indent on  "ファイルタイプによるインデントを行う
+filetype plugin on  "ファイルタイプによるプラグインを使う
+
+"タブ切り替え
+nnoremap <C-Tab>   gt
+nnoremap <C-S-Tab> gT
+

@@ -22,8 +22,8 @@ alias ipython='ipython -pylab --colors='Linux''
 export PYTHONPATH=/Users/kazutoshi/work/PyLib:/Users/kazutoshi/work/SMILES/tools/src/amaterasu.common:/Users/kazutoshi/work/SMILES/tools/src/juno.common:$PYTHONPATH
 #pythonbrew
 if [ -d $HOME/.pythonbrew ]; then
-	source $HOME/.pythonbrew/etc/bashrc
-	VIRTUALENVWRAPPER_PYTHON=$HOME/.pythonbrew/pythons/Python-2.7.2/bin/python
+	source $HOME/.pythonbrew/etc/bashrc;
+	VIRTUALENVWRAPPER_PYTHON=$HOME/.pythonbrew/pythons/Python-2.7.2/bin/python;
 fi
 
 # Aliases --------------------------------------------------------

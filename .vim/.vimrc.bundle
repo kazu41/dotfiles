@@ -44,5 +44,6 @@ Bundle "Shougo/neocomplcache-snippets-complete"
 Bundle "Lokaltog/vim-powerline"
 
 " カラースキーム
-Bundle "Solarized"
+"Bundle "Solarized"
+
 filetype plugin indent on

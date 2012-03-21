@@ -2,6 +2,11 @@
 set number       "行番号表示
 set ruler        "ルーラー表示
 
+"テキスト
+set enc=utf-8
+set fenc=utf-8
+set fencs=iso-2022-jp,utf-8,euc-jp,cp932
+
 "Tab関係
 "tabstop(ts) Tab文字を画面上で何文字に展開するか
 set tabstop=4

@@ -5,6 +5,7 @@ set background=dark
 "colorscheme rdark
 "colorscheme desert
 "colorscheme edark
+
 colorscheme solarized
 let g:solarized_termcolors=16
 let g:solarized_contrast="high"
@@ -12,8 +13,9 @@ let g:solarized_contrast="high"
 set showtabline=2	" タブを常に表示
 if has('gui_macvim')
 	set transparency=5	" 透過率15
-	set background=dark
 endif
+
+set background=dark
 
 "edark
 "http://eureka.pasela.org/

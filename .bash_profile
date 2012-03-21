@@ -24,6 +24,7 @@ export PYTHONPATH=/Users/kazutoshi/work/PyLib:/Users/kazutoshi/work/SMILES/tools
 if [ -d $HOME/.pythonbrew ]; then
 	source $HOME/.pythonbrew/etc/bashrc;
 	VIRTUALENVWRAPPER_PYTHON=$HOME/.pythonbrew/pythons/Python-2.7.2/bin/python;
+	source $HOME/.pythonbrew/pythons/Python-2.7.2/bin/virtualenvwrapper.sh;
 fi
 
 # Aliases --------------------------------------------------------

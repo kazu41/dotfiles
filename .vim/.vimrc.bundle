@@ -29,8 +29,6 @@ nnoremap <C-N> :NERDTreeToggle<Return>
 Bundle "thinca/vim-ref"
 " Python 入力補間
 Bundle "Pydiction"
-" Python
-Bundle "yuroyoro/vim-python"
 
 " Syntax Checking Plugin
 Bundle "scrooloose/syntastic"

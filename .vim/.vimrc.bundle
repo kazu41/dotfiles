@@ -7,6 +7,10 @@ call vundle#rc()
 " ファイラー,ランチャー
 Bundle "unite.vim"
 
+" Undo
+Bundle "sjl/gundo.vim"
+nnoremap <F5> :GundoToggle<CR>
+
 " テンプレート
 Bundle "SonicTemplate.vim"
 
@@ -29,6 +33,7 @@ nnoremap <C-N> :NERDTreeToggle<Return>
 Bundle "thinca/vim-ref"
 " Python 入力補間
 Bundle "Pydiction"
+let g:pydiction_location = "~/.vim/bundle/Pydiction/complete-dict"
 
 " Syntax Checking Plugin
 Bundle "scrooloose/syntastic"

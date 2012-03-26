@@ -12,7 +12,7 @@ source ~/.vim/.vimrc.gui
 """"""""""""""""""""""""""""""
 " => Python section
 """"""""""""""""""""""""""""""
-source ~/.vim/.vimrc.python
+"source ~/.vim/.vimrc.python
 
 """"""""""""""""""""""""""""""
 " unite.vim

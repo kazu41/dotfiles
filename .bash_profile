@@ -25,7 +25,7 @@ export PYTHONPATH=/Users/kazutoshi/work/PyLib:/Users/kazutoshi/work/SMILES/tools
 if [ -d $HOME/.pythonbrew ]; then
 	source $HOME/.pythonbrew/etc/bashrc;
 	VIRTUALENVWRAPPER_PYTHON=$HOME/.pythonbrew/pythons/Python-2.7.2/bin/python;
-	source $HOME/.pythonbrew/pythons/Python-2.7.2/bin/virtualenvwrapper.sh;
+	#source $HOME/.pythonbrew/pythons/Python-2.7.2/bin/virtualenvwrapper.sh;
 fi
 
 # Aliases --------------------------------------------------------
@@ -61,6 +61,13 @@ alias mvim='env LANG=ja_JP.UTF-8 /Applications/Work/MacVim.app/Contents/MacOS/Vi
 ##
 
 # MacPorts Installer addition on 2011-02-28_at_23:14:18: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+if [ -d /opt/local ]; then
+	export PATH=/opt/local/bin:/opt/local/sbin:$PATH;
+	export MANPATH=/opt/local/man:$MANPATH;
+	export LIBRARY_PATH=/opt/local/lib:$LIBRARY_PATH;
+	export LD_LIBRARY_PATH=/opt/local/lib:$LD_LIBRAHRY_PATH;
+	export C_INCLUDE_PATH=/opt/local/include:$C_INCHLUDE_PATH;
+fi
+
 # Finished adapting your PATH environment variable for use with MacPorts.
 

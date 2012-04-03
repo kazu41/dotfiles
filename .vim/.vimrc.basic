@@ -14,12 +14,18 @@ set tabstop=4
 set shiftwidth=4
 "softtabstop(sts) Tabキーを押したときに挿入される空白の量
 set softtabstop=0
-"
+"タブ切り替え
+nnoremap <C-Tab>   gt
+nnoremap <C-S-Tab> gT
 
 "入力関係
 set backspace=indent,eol,start  "BSでなんでも消せるようにする
 set autoindent
 set smartindent
+"クリップボードにコピー
+"check 'vim --version | grep clipboard'
+"if +clipboard, then it works
+set clipboard=unnamed,autoselect
 
 "コマンド補完
 set wildmenu
@@ -45,7 +51,4 @@ syntax on           "シンタックスハイライト
 filetype indent on  "ファイルタイプによるインデントを行う
 filetype plugin on  "ファイルタイプによるプラグインを使う
 
-"タブ切り替え
-nnoremap <C-Tab>   gt
-nnoremap <C-S-Tab> gT
 

@@ -19,3 +19,4 @@ let g:Tex_IgnoredWarnings =
       \"Citation %.%# undefined\n".
       \'LaTeX Font Warning:'"
 let g:Tex_IgnoreLevel = 8
+

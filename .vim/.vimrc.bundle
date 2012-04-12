@@ -52,7 +52,6 @@ let g:neocomplcache_cursor_hold_i = 1
 let g:neocomplcache_cursor_hold_i_time = 0.5
 inoremap <expr><Up> pumvisible() ? neocomplcache#close_popup()."\<Up>" : "\<Up>"
 inoremap <expr><Down> pumvisible() ? neocomplcache#close_popup()."\<Down>" : "\<Down>"
-
 "Bundle 'AutoComplPop'
 
 " ステータスラインカスタマイズ

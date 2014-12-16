@@ -22,13 +22,9 @@ Bundle "quickrun.vim"
 Bundle "taglist.vim"
 nnoremap <C-B> :TlistToggle<Return>
 " ツリー型エクスプローラ
-Bundle "The-NERD-tree"
-nnoremap <C-N> :NERDTreeToggle<Return>
+Bundle "scrooloose/nerdtree"
+"nnoremap <C-N> :NERDTreeToggle<Return>
 
-" tagsの生成
-"Bundle "Source-Explorer-srcexpl.vim"
-" taglist,nerdtree,srcexplの統合
-"Bundle 'trinity.vim'
 " References
 Bundle "thinca/vim-ref"
 " Python 入力補間
@@ -56,8 +52,5 @@ inoremap <expr><Down> pumvisible() ? neocomplcache#close_popup()."\<Down>" : "\<
 
 " ステータスラインカスタマイズ
 Bundle "Lokaltog/vim-powerline"
-
-" カラースキーム
-"Bundle "Solarized"
 
 filetype plugin indent on

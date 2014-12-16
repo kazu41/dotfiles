@@ -24,6 +24,10 @@ Bundle "quickrun.vim"
 " ツリー型エクスプローラ
 Bundle "scrooloose/nerdtree"
 "nnoremap <C-N> :NERDTreeToggle<Return>
+" コメントアウト
+Bundle 'tomtom/tcomment_vim'
+" シングルクオートとダブルクオートの入れ替え等
+Bundle 'tpope/vim-surround'
 
 " References
 Bundle "thinca/vim-ref"
@@ -51,6 +55,6 @@ Bundle "scrooloose/syntastic"
 "Bundle 'AutoComplPop'
 
 " ステータスラインカスタマイズ
-"Bundle "Lokaltog/vim-powerline"
+Bundle "Lokaltog/vim-powerline"
 
 filetype plugin indent on

@@ -6,6 +6,7 @@ call vundle#rc()
 
 " ファイラー,ランチャー
 Bundle "unite.vim"
+Bundle 'Shougo/neomru.vim'
 
 " Undo
 Bundle "sjl/gundo.vim"

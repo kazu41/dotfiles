@@ -19,8 +19,8 @@ Bundle "SonicTemplate.vim"
 " 実行環境
 Bundle "quickrun.vim"
 " 変数宣言一覧 
-Bundle "taglist.vim"
-nnoremap <C-B> :TlistToggle<Return>
+"Bundle "taglist.vim"
+"nnoremap <C-B> :TlistToggle<Return>
 " ツリー型エクスプローラ
 Bundle "scrooloose/nerdtree"
 "nnoremap <C-N> :NERDTreeToggle<Return>
@@ -36,21 +36,21 @@ Bundle "scrooloose/syntastic"
 """"""""""""""""""""""
 
 " 自動補間
-Bundle "neocomplcache"
-Bundle "Shougo/neocomplcache-snippets-complete"
-Bundle "ujihisa/neco-look"
+"Bundle "neocomplcache"
+"Bundle "Shougo/neocomplcache-snippets-complete"
+"Bundle "ujihisa/neco-look"
 "settings for neocomplcache
 " neocomplcache settings
-let g:neocomplcache_enable_at_startup = 1
-let g:neocomplcache_enable_smart_case = 1
-let g:neocomplcache_enable_camel_case_completion = 1
-let g:neocomplcache_cursor_hold_i = 1
-let g:neocomplcache_cursor_hold_i_time = 0.5
-inoremap <expr><Up> pumvisible() ? neocomplcache#close_popup()."\<Up>" : "\<Up>"
-inoremap <expr><Down> pumvisible() ? neocomplcache#close_popup()."\<Down>" : "\<Down>"
+"let g:neocomplcache_enable_at_startup = 1
+"let g:neocomplcache_enable_smart_case = 1
+"let g:neocomplcache_enable_camel_case_completion = 1
+"let g:neocomplcache_cursor_hold_i = 1
+"let g:neocomplcache_cursor_hold_i_time = 0.5
+"inoremap <expr><Up> pumvisible() ? neocomplcache#close_popup()."\<Up>" : "\<Up>"
+"inoremap <expr><Down> pumvisible() ? neocomplcache#close_popup()."\<Down>" : "\<Down>"
 "Bundle 'AutoComplPop'
 
 " ステータスラインカスタマイズ
-Bundle "Lokaltog/vim-powerline"
+"Bundle "Lokaltog/vim-powerline"
 
 filetype plugin indent on

@@ -31,6 +31,10 @@ set clipboard=unnamed,autoselect
 set wildmenu
 set wildmode=list:longest
 set completeopt=menu,preview,menuone
+" 自動的に閉じ括弧を入力
+imap { {}<LEFT>
+imap [ []<LEFT>
+imap ( ()<LEFT>
 
 "検索関係
 set incsearch    "インクリメンタルサーチ

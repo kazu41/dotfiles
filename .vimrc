@@ -22,4 +22,4 @@ source ~/.vim/.vimrc.unite
 """"""""""""""""""""""""""""""
 " vim-latex
 """"""""""""""""""""""""""""""
-source ~/.vim/.vimrc.vimlatex
+"source ~/.vim/.vimrc.vimlatex
